@@ -33,7 +33,7 @@ help:
 
 install:
 	@echo "install spark_learning"
-	$(PIP) install -e . --user --config-settings editable_mode=compat
+	$(PIP) install -e . --user --config-settings editable_mode=compat --break-system-packages -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 test:
 	@echo "run test"
